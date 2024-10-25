@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortés FutureBridge Solutions</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>CORTÉS</h2>
+            <h1>FutureBridge Solutions</h1>
+            <button id="explore-btn">Explore</button>
+        </div>
+    </div>
+
+    <script src="mainpage.js"></script>
+</body>
+</html>
