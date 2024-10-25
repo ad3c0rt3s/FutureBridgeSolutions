@@ -1,0 +1,90 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Container */
+body, html {
+    height: 100%;
+    background-color: #000000; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the text and button vertically */
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    color: white; /* White text for contrast */
+}
+
+/* Heading Styles */
+h1, h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Slightly smaller letter-spacing */
+    background: linear-gradient(
+        to right,
+        #04BBC5 10%,  /* Blue text base color */
+        rgba(255, 255, 255, 0.8) 50%, /* White light effect in the middle */
+        #04BBC5 90%  /* Back to blue */
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: light-sweep 8s infinite; /* Slower sweep */
+}
+
+h1 {
+    font-size: 50px; /* Adjust font size */
+    margin-bottom: 20px; /* Adds spacing between h1 and h2 */
+}
+
+h2 {
+    font-size: 30px; /* Adjusted font size for h2 */
+    margin-bottom: 5px; /* Adds more space between h2 and button */
+    letter-spacing: 3px; /* Adjust letter-spacing */
+    font-weight: 300;
+}
+
+/* Button Styles */
+button {
+    padding: 15px 50px; /* Padding for button */
+    font-size: 20px; /* Adjust font size */
+    color: #fff;
+    background-color: #0483A3; /* Blue background for button */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #004b6b; /* Darker blue on hover */
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Animation for the storm light sweep effect */
+@keyframes light-sweep {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
